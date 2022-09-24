@@ -1,0 +1,115 @@
+
+<!DOCTYPE html> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr"  xml:lang="fr">
+
+  <head>
+    <title>Second exemple de document HTML 5</title>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Jean-Christophe Routier"/>
+  </head>
+
+  <body>
+    <h1>Second document HTML</h1>
+    
+    
+    <h2>Quelques remarques</h2>
+    
+
+    <ol>
+      <li>Sauf cas exceptionnels, 
+	la mise en forme 
+	dans le  
+	document 
+	
+	HTML source n'est pas prise en compte, en particulier
+	
+	les
+	retours à 
+	la ligne.
+      </li>
+      <li>Le cas de la  balise <code>&lt;img&gt;</code> est particulier, celle-ci ne comporte pas de contenu et n'a donc pas de balise fermante.</li>
+      <li>
+	Certains caractères <q>spéciaux</q> sont codés par
+	une <strong>entité</strong> dans le code source. Ces entités
+	commencent pas le symbole "<code>&amp;</code>" et se terminent
+	par "<code>;</code>". Les entités peuvent se référencer par un
+	nom ou par le code hexadécimal du caractère en UTF-8, ce code
+	est alors précédé de <code>#x</code>.
+	
+	<p>
+	En XHTML5, seules quelques entités  nommées sont reconnues,
+	notamment <code>&amp;lt;</code> et <code>&amp;gt;</code> pour
+	les caractères "<code>&lt;</code>" et
+	"<code>&gt;</code>". Pour les autres il faut utiliser le code UTF-8.
+	</p>
+ <p>
+	Voici quelques autres exemples d'entités avec leur
+	nom <q>HTML</q> et leur code UTF-8&#xA0;:
+	</p>
+	<ul> 
+	  <li><code>&amp;nbsp;</code> ou <code>&amp;#xA0;</code> pour un caractère <em>blanc insécable</em> "<code>&#xA0;</code>", nécessaire pour respecter les règles typographiques, par exemple avant un ":"</li>	
+	  <li><code>&amp;laquo; ou &amp;#xAB;</code> et <code>&amp;#xBB;/&amp;#187;</code> pour les caractères "<code>&#xAB;</code>" et "<code>&#xBB;</code>"</li>
+	  <li><code>&amp;euro; ou &amp;#x20AC;</code> pour le caractère "<code>&#x20AC;</code>"</li>
+	  <li><code>&amp;frac12; ou &amp;#xBD;</code> pour le caractère "<code>&#xBD;</code>"</li>
+	  <li>etc.</li>
+	</ul>
+	<p>Il en existe beaucoup d'autres, vous pouvez en trouver une liste complète  
+	sur la <a href="http://www.w3.org/TR/html4/sgml/entities.html">page de référence du W3C</a> 
+	(ou encore ce <q><a href="http://www.w3.org/TR/2011/WD-html5-20110113/named-character-references.html">document en travail</a></q>), 
+	ou encore <a href="http://coin.des.experts.pagesperso-orange.fr/reponses/faq5_4a.html" target="_blank">ce document</a> pour une présentation par catégorie.</p>
+      </li>
+
+      <li>Les <strong>commentaires</strong> s'écrivent dans le code source entre les balises spéciales
+	<code>&lt;!--</code> et <code>--&gt;</code>. Cette partie du document est ignorée par le navigateur.
+	
+	<!-- les commentaires <strong>sont ignorés</strong> par le navigateur meme s'ils ont des balises-->
+      </li>
+    </ol>
+
+    
+    <h2>Les balises</h2>
+    <p>
+      Les balises HTML sont nombreuses. En plus de permettre la structuration du texte, les balises ont une certaine <em>sémantique</em>.
+      Celle-ci permet de caractériser le contenu de la balise. Le choix de l'utilisation d'une balise plutôt qu'une autre se fait donc 
+      en fonction du statut son contenu. On trouve ainsi des balises pour représenter des titres, des paragraphes, 
+      des portions de texte à mettre en évidence, d'autres correspondant à des dates ou des abréviations, etc.
+    </p>
+    
+    
+    <p>
+      Même si à toute balise correspond un <q> style </q>  visuel par défaut utilisé par le navigateur, le choix d'une 
+      balise ne doit pas être fait en fonction de ce style visuel. Nous verrons lorsque nous étudierons les <em>feuilles <abbr title="Cascading Style Sheet">CSS</abbr></em>
+      que cet aspect visuel peut être modifié à tout moment.
+    </p>
+    <p>
+      <strong>Le choix de la balise dépend donc bien de sa sémantique et non de son rendu graphique.</strong>
+    </p>
+    
+    <p>Les éléments que l'on peut trouver dans l'élément <code>body</code> sont des éléments de <strong>contenu de flux</strong>. 
+      On y trouve (cf. figure ci-dessous)&#xA0;:
+    </p>
+    
+    <ul>
+      <li>des éléments de <strong>contenu de section</strong>,</li>
+      <li>des éléments de <strong>contenu de titre</strong> dont les balises se nomment <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code>,
+      </li>
+      <li>des éléments de <strong>contenu de phrasé</strong>, dont le texte <q> simple </q>, qui mis en séquence constituent des paragraphes.
+	Par exemple <code>&lt;strong&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;abbr&gt;</code>, etc.
+	On parle également d'<strong>éléments ligne</strong> pour de tels éléments.
+      </li>
+      <li>des éléments structurants destinés à accueillir du contenu phrasé (<code>&lt;p&gt;</code>, <code>&lt;pre&gt;</code> par exemple), 
+	ou d'autres éléments avec certaines restrictions, comme l'élément <code>&lt;ul&gt;</code> avec les éléments <code>&lt;li&gt;</code>.
+	On trouve parfois le terme d'<strong>éléments bloc</strong> pour parler de tels éléments.
+      </li>
+      <li>des éléments destinés à accueillir des contenus particuliers comme par exemple les éléments <code>&lt;img&gt;</code> ou <code>&lt;canvas&gt;</code>.
+      </li>
+    </ul>
+    
+    <figure>
+      <img src="https://developer.mozilla.org/@api/deki/files/6244/=Content_categories_venn.png" width="350" alt="Les différentes catégories d'éléments HTML"/>
+      <figcaption>Les différentes catégories d'éléments HTML.</figcaption>
+    </figure>
+  </body>
+
+</html>
