@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Bacteria ORF Finder</title>
+		<meta name="author" content="LEMAIRE Guillaume"/>
+		<meta name="keywords" content="ORF, Bacteria, Bacterie, Projet, TW"/>
+	</head>
+	
+	<body>
+
+		<h1>Bacteria ORF Finder</h1>
+
+		<div class="intro">
+			<p>
+				Cette page à été réalisé par LEMAIRE Guillaume dans le cadre d'un projet de l'UE TW en M2 <abbr title="Méthodes Informatiques et Statistiques pour les Omics"><a href="https://sciences-technologies.univ-lille.fr/informatique/formation/master-bioinformatique">MISO</a></abbr>.<br/>
+				L'objectif de ce projet est de permettre à l'utilisateur d'utiliser plus facilement un programme réalisé en M1 MISO <abbr title="Méthodes pour l'Analyse Bio-informatique des Séquences"><a href="https://www.fil.univ-lille.fr/portail/index.php?dipl=M1MISO&sem=M1S2MISO&ue=MABS&label=Pr%C3%A9sentation">MABS</a></abbr>.<br/>
+				Ce programme codé en <a href="https://fr.wikipedia.org/wiki/Python_(langage)">Python</a> permet de détecter des ORFs dans un génome de <b><a href="https://fr.wikipedia.org/wiki/Bact%C3%A9rie">bactérie</a></b>.
+			</p>
+		</div>
+	
+		<ul class="bdd">
+			<li><a href="https://www.ncbi.nlm.nih.gov/">NCBI</a></li>
+			<li><a href="https://www.ensembl.org/index.html">Ensembl</a></li>
+			<li><a href="https://www.ebi.ac.uk/">EMBL-EBI</a></li>
+		</ul>
+
+		<p class="fasta">
+			<label title="choose_fasta" for="uploaded_file">Génome au format Fasta ou Multifasta :</label>
+			<input type="file" id="uploaded_file" name="uploaded_file" size="10"><br/>
+		</p>
+	
+		<p class="code">
+			<label title="choose_code_genetique" for="uploaded_file">Code génétique :</label>
+			<input type="radio" id="atg" name="choose" size="10">ATG
+			<input type="radio" id="atg_btg" name="choose" size="10">ATN & BTG (iupac)
+		</p>
+	
+		<p class="size">
+			<label title="choose_orf_size" for="orfsize">Taille minimum des ORFs :</label>
+			<input type="number" id="uri" size="6" value="300" type="number">
+		</p>
+
+	</body>
+
+</html>
