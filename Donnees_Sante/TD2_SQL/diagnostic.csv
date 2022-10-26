@@ -1,0 +1,6 @@
+"id_diagnostic";"code_diagnostic";"libelle_diagnostic";"date_debut_validite";"date_fin_validite"
+1;"D100";"Diagnostic 100";2010-01-01;2020-12-31
+2;"D200";"Diagnostic 200";2010-01-01;2020-12-31
+3;"D300";"Diagnostic 300";2010-01-01;2020-12-31
+4;"D400";"Diagnostic 400";2010-01-01;2020-12-31
+5;"D500";"Diagnostic 500";2010-01-01;2020-12-31
