@@ -1,4 +1,4 @@
-INSERT INTO public.ville (id_ville,ville) VALUES
+INSERT INTO ville (id_ville,ville) VALUES
 	 (1,'Lille'),
 	 (2,'Roubaix'),
 	 (3,'Tourcoing'),

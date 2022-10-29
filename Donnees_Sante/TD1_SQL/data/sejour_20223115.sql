@@ -1,4 +1,4 @@
-INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
+INSERT INTO sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
 	 (1,1,'2020-01-01','2020-01-10',1),
 	 (2,2,'2020-01-01','2020-01-12',1),
 	 (3,2,'2020-01-20','2020-01-25',1),
@@ -9,7 +9,7 @@ INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejou
 	 (8,5,'2020-01-02','2020-01-02',1),
 	 (9,6,'2020-01-02','2020-01-10',1),
 	 (10,7,'2020-01-02','2020-01-04',1);
-INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
+INSERT INTO sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
 	 (11,7,'2020-01-10','2020-01-20',2),
 	 (12,8,'2020-01-03','2020-01-05',2),
 	 (13,9,'2020-02-05','2020-02-10',1),
@@ -20,7 +20,7 @@ INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejou
 	 (18,14,'2020-01-06','2020-01-08',2),
 	 (19,14,'2020-02-20','2020-02-21',2),
 	 (20,15,'2020-01-06','2020-01-08',2);
-INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
+INSERT INTO sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
 	 (21,16,'2020-01-06','2020-01-08',3),
 	 (22,17,'2020-01-06','2020-01-08',3),
 	 (23,18,'2020-01-06','2020-01-09',3),
@@ -31,7 +31,7 @@ INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejou
 	 (28,22,'2020-02-07','2020-02-19',1),
 	 (29,23,'2020-01-17','2020-01-19',2),
 	 (30,24,'2020-01-17','2020-01-20',3);
-INSERT INTO public.sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
+INSERT INTO sejour (id_sejour,id_patient,date_debut_sejour,date_fin_sejour,id_hopital) VALUES
 	 (31,25,'2020-01-17','2020-01-20',3),
 	 (32,26,'2020-01-18','2020-01-20',1),
 	 (33,27,'2020-01-18','2020-01-22',1),

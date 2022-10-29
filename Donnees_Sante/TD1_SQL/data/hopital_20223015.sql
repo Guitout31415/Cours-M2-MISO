@@ -1,4 +1,4 @@
-INSERT INTO public.hopital (id_hopital,hopital) VALUES
+INSERT INTO hopital (id_hopital,hopital) VALUES
 	 (1,'CHU Lille'),
 	 (2,'CH Roubaix'),
 	 (3,'CH Tourcoing'),

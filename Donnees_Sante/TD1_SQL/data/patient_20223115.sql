@@ -1,4 +1,4 @@
-INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
+INSERT INTO patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (1,'1997-05-21','F',2),
 	 (2,'1987-02-04','F',1),
 	 (3,'1956-11-28','F',2),
@@ -9,7 +9,7 @@ INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (8,'1999-08-21','M',2),
 	 (9,'2005-07-23','M',4),
 	 (10,'1990-01-02','F',5);
-INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
+INSERT INTO patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (11,'1978-05-29','M',1),
 	 (12,'1991-12-15','F',1),
 	 (13,'1979-05-08','M',1),
@@ -20,7 +20,7 @@ INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (18,'2010-01-09','F',5),
 	 (19,'2005-12-17','F',3),
 	 (20,'1940-06-21','F',2);
-INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
+INSERT INTO patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (21,'2000-10-10','F',3),
 	 (22,'1987-09-18','M',1),
 	 (23,'1971-12-30','M',2),
@@ -31,7 +31,7 @@ INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (28,'1987-12-26','M',2),
 	 (29,'1956-03-25','M',1),
 	 (30,'1980-09-08','F',1);
-INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
+INSERT INTO patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (31,'1999-12-28','F',4),
 	 (32,'1991-02-07','F',1),
 	 (33,'2000-01-12','M',1),
@@ -42,7 +42,7 @@ INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (38,'1930-01-08','M',2),
 	 (39,'1973-10-21','F',2),
 	 (40,'1981-02-20','M',3);
-INSERT INTO public.patient (id_patient,date_naissance,sexe,id_ville) VALUES
+INSERT INTO patient (id_patient,date_naissance,sexe,id_ville) VALUES
 	 (41,'1966-02-17','F',3),
 	 (42,'1990-09-10','F',2),
 	 (43,'1945-02-03','F',1),
