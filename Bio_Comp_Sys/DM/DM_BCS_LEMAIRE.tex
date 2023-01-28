@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\newcommand{\R}{\mathbb{R}}
+\usepackage[top=2cm,bottom=2cm,left=1cm,right=1cm]{geometry}
+
+\title{DM BCS Partie 1}
+\author{LEMAIRE Guillaume M2 MISO}
+\date{Février 2023}
+
+\begin{document}
+
+\maketitle
+
+\section*{Exercice 1}
+\subsection*{Q1)}
+
+La loi de conservation est : $$\forall t\in\R_+; P(t)+2P_2(t)+3P_3(t)=P(0)+2P_2(0)+3P_3(0)$$
+Cette formule à été trouvée grâce au package python $\mathsf{sympy}$.
+
+\subsection*{Q2)}
+
+Il est plausible que 2 réactions aient les mêmes constantes de réactions si elles ont des mécanismes similaires, ou sont effectuées dans des conditions similaires (pression, température, pH, ...)
+
+\subsection*{Q3)}
+
+\begin{itemize}
+\item On a $2$ réactions réversibles dans 2 classes, donc le réseau est faiblement réversible.
+
+\item $\delta = 4-2-\text{rang}
+\begin{pmatrix}
+-2 & 2 & -1 & 1 \\
+1 & -1 & -1 & 1 \\
+0 & 0 & 1 & -1 \\
+\end{pmatrix} \\= 4-2-\text{rang}
+\begin{pmatrix}
+-2 & 0 & -1 & 0 \\
+1 & 0 & -1 & 0 \\
+0 & 0 & 1 & 0 \\ 
+\end{pmatrix} \\= 4-2-2 = 0$
+\end{itemize}
+\noindent\newline
+Comme le système est faiblement réversible et que $\delta=0$, on applique le théorème de déficience zéro.
+Il existe donc un unique équilibre pour chaque classe de comptabilité.
+
+\newpage
+\subsection*{Q4)}
+\begin{figure}[h!]
+	\includegraphics[scale=0.75]{"graph_ex1_q4.png"}
+\end{figure}
+
+\subsection*{Q5)}
+
+On peut conjecturer que $p_{3,0}$ augmente si T augmente. 
+
+En effet, plus la quantité totale de protéines augmente, il y aura plus de protéines disponibles pour réagir, et donc de produire plus de $P_3$ à l'équilibre.
+
+\subsection*{Q6)}
+
+\subsection*{Q7)}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Exercice 2}
+\subsection*{Q1)}
+
+\subsection*{Q2)}
+
+\subsection*{Q3)}
+
+\subsection*{Q4)}
+
+\subsection*{Q5)}
+
+\subsection*{Q6)}
+
+\subsection*{Q7)}
+
+\end{document}
